@@ -1,3 +1,4 @@
+# Test suite in this repo is based on chrome browser
 # Install needed libraries by Chrome Driver
 ```
 sudo apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev
@@ -11,7 +12,7 @@ after installation make sure to run
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt -y install ./google-chrome-stable_current_amd64.deb
 ```
-# set a symbolic link from Windows Chrome to WSL as per ChromeDrivere requirements: 
+# Set a symbolic link from Windows Chrome to WSL as per ChromeDrivere requirements: 
 
 https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver/01fde32d0ed245141e24151f83b7c2db31d596a4#requirements 
 
