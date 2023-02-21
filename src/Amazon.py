@@ -22,6 +22,7 @@ class AmazonBase:
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("start-maximized")
+        #chrome_options.binary_location = "C:/Program Files/Google/Chrome/Application/chrome.exe"
 
         # Initializing the Chrome driver
         self.driver = webdriver.Chrome(options=chrome_options,

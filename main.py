@@ -3,6 +3,8 @@ Starting point for the test suite.
 """
 import sys
 from src.AmazonCartTest import AmazonCartTest
+from src.AmazonSearchTest import AmazonSearchTest
+from src.AmazonCheckoutTest import AmazonCheckoutTest
 
 
 def _report_test_results(failed_tests: int) -> None:
@@ -16,7 +18,11 @@ def _report_test_results(failed_tests: int) -> None:
 
 def run_all_tests() -> None:
 
+    test_obj = AmazonCheckoutTest()
+    test_obj.run_test()
     test_obj = AmazonCartTest()
+    test_obj.run_test()
+    test_obj = AmazonSearchTest()
     test_obj.run_test()
 
 def main() -> None:
