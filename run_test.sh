@@ -18,11 +18,14 @@ fi
 
 pylint_directories=( src/ )
 
+
 errors=0
 
 . .venv/bin/activate
 echo "--- Running pylint"
 pylint ${pylint_directories[@]} || ((errors=errors+1))
+echo "--- Running pytest suite"
+pytest main.py || ((errors=errors+1))
 deactivate
 
 if [ ${errors} -gt 0 ]; then

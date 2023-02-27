@@ -1,0 +1,11 @@
+[MESSAGES CONTROL]
+disable=
+# The following fault codes are chosen to be ignored, not because of a lack of time, but because the
+# standards that they enforce are deemed to not fit this project
+  R0801,  # Similar lines in 2 files
+  W0201,  # Attribute 'driver' defined outside __init__
+[FORMAT]
+max-line-length=100
+
+[SIMILARITIES]
+min-similarity-lines=8

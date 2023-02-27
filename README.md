@@ -19,4 +19,11 @@ https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver/01fde32d0ed245141e24151
 ```
 sudo ln -s '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' /usr/bin/google-chrome
 ```
-# First you will need to run setup_venv.sh then run_test.sh
+# First you will need to configre your email and password in src/config.in
+# Second run setup_venv.sh then run_test.sh to run pylint and pytest
+# You also have the option to run the tests seperately by running 
+```
+. .venv/bin/activate
+.venv/bin/python main.py
+deactivate
+```
